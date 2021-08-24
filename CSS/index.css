@@ -1,0 +1,287 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-color: #035168;
+}
+.logo {
+  /* LOGO */
+
+  margin: 0em 0 0.3em 0.3em;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: row;
+  font-family: "Roboto";
+  width: 20%;
+  float: left;
+}
+h1 {
+  margin: 0;
+  padding: 0.5em 0 0.5em 0;
+  font-size: 2em;
+  font-weight: normal;
+  color: #026bd4;
+}
+h1:hover {
+  cursor: pointer;
+}
+span {
+  padding: 0.5em 0 0.5em 0;
+  font-size: 2em;
+  font-weight: bold;
+  color: #1f206e;
+}
+span:hover {
+  cursor: pointer;
+}
+.main {
+  margin: 0;
+  position: relative;
+  padding: 0;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: 70vh;
+  min-height: 70vh;
+  max-height: 70vh;
+  z-index: 0;
+  background-image: url("../images/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.menu {
+  /* MENU */
+  width: 80%;
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-weight: lighter;
+}
+.menu ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  float: right;
+  font-size: 40px;
+}
+.menu li {
+  padding: 0 1em 0 1em;
+  font-size: 40px;
+}
+.menu li a {
+  color: white;
+  align-items: center;
+  font-size: 25px;
+  text-decoration: none;
+}
+.menu li a:hover {
+  color: gray;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.content {
+  z-index: 3;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2em;
+}
+.book {
+  z-index: 3;
+  width: 100%;
+  height: 5%;
+  position: absolute;
+  padding: 5em;
+  margin: 0;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-size: 1.2em;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.card span {
+  border-top: 4px solid rgb(161, 161, 161);
+  width: 1.5em;
+  margin-left: 0.4em;
+  padding-bottom: 0.2em;
+}
+.card span:hover {
+  cursor: context-menu;
+}
+.btn-book {
+  z-index: 3;
+  width: 100%;
+  height: 20%;
+  width: 15%;
+  padding: 18em 0 0 4em;
+}
+.banner {
+  z-index: 3;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  margin: 0;
+  color: #ffffff;
+
+  font-size: 2.5em;
+  font-weight: 800;
+  padding: 2.1em 1em 0 1.7em;
+}
+
+.book-heading a:hover {
+  color: #052049;
+  text-decoration: underline;
+}
+.book-heading a i {
+  padding-left: 5px;
+}
+.book-cards {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 1em;
+  padding-bottom: 4.3em;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  align-items: stretch;
+}
+.book-cards::-webkit-scrollbar {
+  height: 0.3em;
+  background-color: #dddddd;
+}
+.book-cards::-webkit-scrollbar-thumb {
+  background-color: #666666;
+  height: 0.5em;
+}
+.book-cards::-webkit-scrollbar-track {
+  border: 2px solid #ffffff;
+}
+
+.card {
+  padding: 2em;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.card img {
+  width: 10em;
+  height: 17em;
+  margin: 0.5em;
+}
+.card h4 {
+  font-family: "Nanum Myeongjo";
+  font-weight: 600;
+  padding-left: 1em;
+}
+
+.btn-book button {
+  z-index: 3;
+  box-sizing: border-box;
+  margin: 0 1em;
+  padding: 1.4em;
+  border-radius: 2em;
+  font-size: 1.1em;
+  background-color: #1a3857;
+  color: #ffffff;
+  font-weight: normal;
+  font-family: "Roboto";
+  letter-spacing: 2px;
+  border: 0px;
+  width: 12em;
+}
+.btn-book button:hover {
+  background-color: #142033;
+  cursor: pointer;
+}
+footer {
+  width: 100%;
+  height: 10vh;
+  background-color: #1a3857;
+}
+.copyright {
+  width: 100%;
+  color: #9ba6b6;
+  display: contents;
+}
+.copyright p {
+  padding: 0.3em 0;
+  margin: 1em 0 1em 1em;
+  float: left;
+}
+.copyright a {
+  padding: 0.3em 0;
+  margin: 1em 1em 1em 1em;
+  float: right;
+  color: #9ba6b6;
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-size: 1em;
+  font-weight: lighter;
+}
+.book-info {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  margin: 0 0 8em 0;
+  height: 55vh;
+  width: 100%;
+  
+}
+.book-heading {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2.5em;
+}
+.book-heading h2 {
+  font-family: "Nanum Myeongjo";
+  font-weight: 600;
+  padding-left: 1em;
+}
+.book-heading span {
+  border-top: 4px solid rgb(161, 161, 161);
+  width: 2.5em;
+  margin-left: 0.7em;
+  padding: 0 0 0.5em 0;
+}
+.book-heading span:hover {
+  cursor: context-menu;
+}
+.book-heading a {
+  font-family: "Montserrat";
+  padding-left: 1.4em;
+  padding-top: 0;
+  list-style: none;
+  text-decoration: none;
+  color: #006be9;
+}
+.card a {
+  font-family: "Montserrat";
+  padding-left: 1em;
+  padding-top: 0;
+  list-style: none;
+  text-decoration: none;
+  color: #006be9;
+  max-height: 17em;
+}
+.card a:hover {
+  color: #052049;
+  text-decoration: underline;
+}
+.card a i {
+  padding-left: 5px;
+}
